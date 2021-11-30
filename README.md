@@ -11,7 +11,9 @@ A simple package to check for bad links
   is_scam
 ```
 ### Downloading
-```npm i https://github.com/Bumblebee-3/link-checker```
+```
+npm i https://github.com/Bumblebee-3/link-checker
+```
 
 #### Approximately around 9000+ links (total)
 ## Usage
