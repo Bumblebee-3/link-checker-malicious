@@ -12,7 +12,7 @@ A simple package to check for bad links
 ```
 ### Downloading
 ```
-npm i https://github.com/Bumblebee-3/link-checker
+npm i https://github.com/Bumblebee-3/link-checker-malacious
 ```
 
 #### Approximately around 9000+ links (total) of "bad sites".
