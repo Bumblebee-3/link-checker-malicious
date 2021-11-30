@@ -39,4 +39,7 @@ console.log("is it a nsfw site: "+nsfw)
 console.log("is it a scam site: "+scam)
 
 ```
-Credits: Bumblebee#1447 (on discord) creating the package
+## Credits: 
+[Bumblebee#1447](https://discord.com/users/818377414367379487) (on discord) creating the package
+[DevSpen](https://github.com/DevSpen) for [this repo](https://github.com/DevSpen/links) & [ELBKR](https://github.com/elbkr) for [this repo](https://github.com/elbkr/bad-websites).
+All "illegal" websites have been taken from here.
