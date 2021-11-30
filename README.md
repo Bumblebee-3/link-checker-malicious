@@ -1,4 +1,4 @@
-# link-checker
+# link-checker-malacious
 A simple package to check for bad links
 ## List Of Functions Available
 ```
@@ -12,13 +12,13 @@ A simple package to check for bad links
 ```
 ### Downloading
 ```
-npm i https://github.com/Bumblebee-3/link-checker-malacious
+npm i link-checker-malacious
 ```
 
 #### Approximately around 9000+ links (total) of "bad sites".
 ## Usage
   ```js
-const r = require("link-checker");
+const r = require("link-checker-malacious");
 
 const link = "your link here";
 const cam = r.is_cam(link);
