@@ -1,45 +1,37 @@
-# link-checker
-A simple package to check for bad links
-## List Of Functions Available
+# Aoi.js Plugins!
+## The first ever Aoi.js plugins package
+### Requires Node V16+
+## Downloading:  
 ```
-   is_cam
-  is_dating
-  is_gambling
-  is_pirated
-  is_ip_grabber
-  is_nsfw
-  is_scam
+npm i aoi.js-plugins
 ```
-### Downloading
-```
-npm i https://github.com/Bumblebee-3/link-checker
-```
+## Usage:
+```js
+const aoijs = require("aoi.js")
+const plugin = require("aoi.js-plugins")
 
-#### Approximately around 9000+ links (total) of "bad sites".
-## Usage
-  ```js
-const r = require("link-checker");
+const bot = new aoijs.Bot({
+token: "your very secret token", //Discord Bot Token
+prefix: "abcdefg", //Discord Bot Prefix
+intents: "all" //Discord Intents
+})
+plugin.load_funcs(bot)
+// SAY COMMAND
+bot.command({
+  name:"say",
+  code:`$say[$message;$userTag[$authorID]]`
+})
+// MEME COMMAND
+bot.command({
+  name:"meme",
+  code: `
+  $meme
+  $title[1;$getVar[memetitle]]
+  $image[1;$getVar[memeurl]]
+  
+  `
+})
 
-const link = "your link here";
-const cam = r.is_cam(link);
-const dating = r.is_dating(link);
-const gambling = r.is_gambling(link);
-const pirated = r.is_pirated(link);
-const ip = r.is_ip_grabber(link);
-const nsfw = r.is_nsfw(link);
-const scam = r.is_scam(link);
-
-console.log("Link: "+link)
-console.log("is it a cam site: "+cam)
-console.log("is it a dating site: "+dating)
-console.log("is it a gambling site: "+gambling)
-console.log("is it a pirated site: "+pirated)
-console.log("is it a ip grabber: "+ip)
-console.log("is it a nsfw site: "+nsfw)
-console.log("is it a scam site: "+scam)
-
+bot.onMessage()
 ```
-## Credits: 
-[Bumblebee#1447](https://discord.com/users/818377414367379487) (on discord) creating the package
-[DevSpen](https://github.com/DevSpen) for [this repo](https://github.com/DevSpen/links) & [ELBKR](https://github.com/elbkr) for [this repo](https://github.com/elbkr/bad-websites).
-All "illegal" websites have been taken from here.
+More cool functions comming soon...
