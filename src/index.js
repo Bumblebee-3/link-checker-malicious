@@ -34,9 +34,15 @@ client.variables({
 
 })
 }
-
+function load_handler(client, callback){
+  let call = require("../"+callback)
+  for(var item in call.callbacks) {
+  eval("client."+call.callbacks[item]);
+  }
+}
 
 
 module.exports ={
-  load_funcs
+  load_funcs,
+  load_handler
 }
