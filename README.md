@@ -23,3 +23,5 @@ else{
 ## Credits: 
 [Bumblebee#1447](https://discord.com/users/818377414367379487) (on discord) creating the package
 [DevSpen](https://github.com/DevSpen) for [this repo](https://github.com/DevSpen/links) & [ELBKR](https://github.com/elbkr) for [this repo](https://github.com/elbkr/bad-websites).
+
+I also know that the name has a spelling error; but I can't rename on NPM :(
