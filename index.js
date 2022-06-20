@@ -12868,56 +12868,66 @@ const scam = [
 
 function isMalLink(text){
   let val = "none";
+  let isP = false;
   let link = "none";
   for (var i=0; i < dc_scam.length; i++) {
     if (text.includes(dc_scam[i])) {
       val = "discord scam";
-      link = dc_scam[i]
+      link = dc_scam[i];
+      isP = true;
     }
   }
   for (var i=0; i < cams.length; i++) {
     if (text.includes(cams[i])) {
       val = "cams";
       link = cams[i]
+      isP = true;
     }
   }
   for (var i=0; i < dating.length; i++) {
     if (text.includes(dating[i])) {
       val = "dating";
       link = dating[i]
+      isP = true;
     }
   }
   for (var i=0; i < gambling.length; i++) {
     if (text.includes(gambling[i])) {
       val = "gambling";
       link = gambling[i]
+      isP = true;
     }
   }
   for (var i=0; i < pirated.length; i++) {
     if (text.includes(pirated[i])) {
       val = "pirated";
       link = pirated[i]
+      isP = true;
     }
   }
   for (var i=0; i < ipg.length; i++) {
     if (text.includes(ipg[i])) {
       val = "ip grabber";
       link = ipg[i]
+      isP = true;
     }
   }
   for (var i=0; i < nsfw.length; i++) {
     if (text.includes(nsfw[i])) {
       val = "nsfw";
       link = nsfw[i]
+      isP = true;
     }
   }
   for (var i=0; i < scam.length; i++) {
     if (text.includes(scam[i])) {
       val = "scam";
       link = scam[i]
+      isP = true;
     }
   }
   return {
+    isMal:isP,
     type:val,
     link:link
   };
