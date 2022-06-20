@@ -13,8 +13,12 @@ npm i link-checker-malacious
   ```js
 const mal = require("link-checker-malacious");
 let data = mal.isMalLink("string of text here")//it will auto detect links in it and scan those links
-console.log("Type: "+data.type+"\n Link: "+data.link)
-
+if(data.isMal==true){
+  console.log("Type: "+data.type+"\n Link: "+data.link)
+}
+else{
+  console.log("Not a malacious string")
+}
 ```
 ## Credits: 
 [Bumblebee#1447](https://discord.com/users/818377414367379487) (on discord) creating the package
