@@ -7,6 +7,8 @@ npm i link-checker-malacious
 ```
 
 #### Approximately around 9000+ links (total) of "bad sites".
+
+## Update: v1.5.0 has only one function, it will check for all types of links, and even return the detected link.
 ## Usage
   ```js
 const mal = require("link-checker-malacious");
