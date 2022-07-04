@@ -3,7 +3,7 @@ A simple package to check for bad links
 
 ### Downloading
 ```
-npm i link-checker-malacious
+npm i link-checker-malicious
 ```
 
 #### Approximately around 10,000+ links (total) of "bad links".
